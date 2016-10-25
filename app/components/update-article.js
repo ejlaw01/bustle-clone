@@ -16,7 +16,6 @@ export default Ember.Component.extend({
         image: this.get('image'),
       };
       this.set('updateArticle', false);
-      console.log("Step 1!");
       this.sendAction('update', article, params);
     }
   }
