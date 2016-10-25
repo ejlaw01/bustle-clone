@@ -3,6 +3,6 @@
 
 <ul>
   {{#each model as |article|}}
-    <li>{{article.title}} by {{article.author}}</li>
+    {{article-tile article=article destroyArticle="destroyArticle"}}
   {{/each}}
 </ul>
